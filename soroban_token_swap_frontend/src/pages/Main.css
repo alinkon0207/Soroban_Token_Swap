@@ -1,0 +1,174 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: right;
+}
+
+.navbar ul li {
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.navbar ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.title {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.powered-by {
+    text-align: center;
+    margin-top: 20px;
+    color: #999;
+    font-size: 12px;
+}
+
+.description {
+    text-align: center;
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+}
+
+.card {
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.card-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card-row {
+    display: flex;
+    justify-content: center;
+}
+
+.card-column p {
+    padding: 0 10px;
+    margin-bottom: 5px;
+}
+
+.toolTip {
+    padding: 0 10px;
+    border: solid 2px #333;
+    border-radius: 20px;
+}
+
+.card-info {
+    position: relative;
+    display: inline-block;
+}
+
+.card-info span {
+    visibility: hidden;
+    width: 200px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    border-radius: 5px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.card-info:hover span {
+    visibility: visible;
+    opacity: 1;
+}
+
+.card button {
+    margin-top: 10px;
+}
+
+
+.small-title {
+    text-align: center;
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+.table-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+table {
+    border-collapse: collapse;
+    margin-bottom: 30px;
+}
+
+table th {
+    font-weight: bold;
+}
+
+table td,
+table th {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: left;
+}
+
+.card-description {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+button {
+    margin: 3px 10px;
+}
+
+h3{
+    margin-left: 10px;
+    font-style: italic;
+    text-decoration: underline;
+}
+
+label {
+    margin: 10px;
+}
+
+input {
+    margin: 2px;
+}

@@ -1,0 +1,24 @@
+module.exports = {
+  extends: ["@stellar/eslint-config", "plugin:import/typescript"],
+  rules: {
+    'no-await-in-loop': 'off',
+    'max-len': 'off', // disables line length check
+    "no-console": "off",
+    "import/no-unresolved": "off",
+    "react/jsx-filename-extension": ["error", { extensions: [".tsx", ".jsx"] }],
+    "no-plusplus": "off",
+    "jsdoc/check-indentation": "off",
+    "jsdoc/newline-after-description": "off",
+    "@typescript-eslint/naming-convention": [
+      "error",
+      {
+        selector: "typeProperty",
+        format: ["PascalCase", "UPPER_CASE", "camelCase", "snake_case"],
+        leadingUnderscore: "allow",
+        trailingUnderscore: "allow",
+      },
+    ],
+    // TODO: fix this later
+    "@typescript-eslint/no-unsafe-argument": "off",
+  },
+};
